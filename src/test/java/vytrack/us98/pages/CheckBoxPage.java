@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import vytrack.us98.utilities.Driver;
 
+import java.util.List;
+
 public class CheckBoxPage {
     public CheckBoxPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -14,6 +16,6 @@ public class CheckBoxPage {
     @FindBy(xpath ="(//button[@class='btn btn-default btn-small dropdown-toggle']//input)")
     public WebElement checkBox;
 
-    @FindBy(xpath ="(//td[@class='select-row-cell renderable grid-cell grid-body-cell grid-body-cell-massAction'])")
-    public WebElement allCheckBox;
+    @FindBy(xpath ="(//td[@class='select-row-cell renderable grid-cell grid-body-cell grid-body-cell-massAction']//input)")
+    public List <WebElement> allCheckBox;
 }

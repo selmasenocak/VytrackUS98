@@ -36,8 +36,7 @@ public class vehiclePageColumns_StepDefinitions {
     @Given("user is on the homepage")
     public void user_is_on_the_homepage() {
         String expectedTitle="Dashboard";
-      Assert.assertEquals(Driver.getDriver().getTitle(),expectedTitle);
-        System.out.println(Driver.getDriver().getTitle());
+        Assert.assertEquals(Driver.getDriver().getTitle(),expectedTitle);
     }
 
     @Given("users click the Vehicle Costs under the Fleet")

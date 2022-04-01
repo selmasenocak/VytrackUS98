@@ -1,4 +1,3 @@
-@wip
 Feature:check the first checkbox to check all the Vehicle Costs
 
 
@@ -13,9 +12,9 @@ Feature:check the first checkbox to check all the Vehicle Costs
 
     Examples:
       | username        | password    |
-      | user1           | UserUser123 |
       | salesmanager120 | UserUser123 |
       | storemanager85  | UserUser123 |
+      | user1           | UserUser123 |
 
 
 
