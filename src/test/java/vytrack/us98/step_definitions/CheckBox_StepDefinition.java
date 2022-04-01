@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import vytrack.us98.pages.CheckBoxPage;
 import vytrack.us98.utilities.Driver;
@@ -27,7 +28,10 @@ public class CheckBox_StepDefinition {
 
         for(int i = 0; i<size; i++) {
 
-            AllCheckboxes.get(i).click();
+
+            Assert.assertTrue(checkBoxPage.allCheckBox.isSelected());
+
+            System.out.println(AllCheckboxes);
 
         }
 

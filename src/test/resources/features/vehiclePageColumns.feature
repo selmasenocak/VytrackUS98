@@ -1,4 +1,4 @@
-@wip
+
 Feature:three columns feature on the Vehicle Model page.
 
 
